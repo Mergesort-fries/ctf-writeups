@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "Old Sessions"
-categories: [picoCTF2026, web]
+date: 2026-03-20
+categories: [picoctf2026, web]
+ctf: picoctf2026
+difficulty: Medium
+author: yourname
+description: "Forging a Flask session token to escalate privileges to admin."
 ---
 
 ## 🧩 Challenge

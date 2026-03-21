@@ -1,3 +1,40 @@
 title: CTF Writeups
-description: Team writeups and exploits
+description: Mergesort Fries CTF team writeups and exploits
+url: "https://Mergesort-fries.github.io"
+baseurl: "/ctf-writeups"
+
+# Team info
+github_org: Mergesort-fries
+# ctftime_url: https://ctftime.org/team/YOURTEAMID
+
 theme: minima
+
+# Turn off minima's defaults — we override everything
+minima:
+  skin: dark
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

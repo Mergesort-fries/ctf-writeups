@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+{% assign cat = page.categories[1] | default: page.categories[0] %}
+
+<article>
+  <div class="post-header">
+
+    <div class="post-breadcrumb">
+      <a href="{{ '/' | relative_url }}">~</a>
+      <span class="sep">/</span>
+      {% if page.ctf %}
+        <a href="{{ '/' | append: page.ctf | relative_url }}">{{ page.ctf }}</a>
+        <span class="sep">/</span>
+      {% endif %}
+      {% if cat %}
+        <a href="{{ '/' | append: cat | relative_url }}">{{ cat }}</a>
+        <span class="sep">/</span>
+      {% endif %}
+      <span>{{ page.title }}</span>
+    </div>
+
+    <div class="post-header-meta">
+      <span class="post-date">{{ page.date | date: "%Y-%m-%d" }}</span>
+      {% if cat %}<span class="post-tag tag-{{ cat }}">{{ cat }}</span>{% endif %}
+      {% if page.difficulty %}
+        <span class="post-tag" style="background:rgba(255,255,255,0.06);color:var(--muted)">
+          {{ page.difficulty }}
+        </span>
+      {% endif %}
+      {% if page.author %}
+        <span class="post-tag" style="background:rgba(255,255,255,0.06);color:var(--muted)">
+          by {{ page.author }}
+        </span>
+      {% endif %}
+    </div>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p style="color:var(--text-dim);font-size:0.95rem;">{{ page.description }}</p>
+    {% endif %}
+
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+    <a href="{{ '/' | relative_url }}" style="font-family:var(--mono);font-size:0.85rem;color:var(--muted);">
+      ← back to all writeups
+    </a>
+  </div>
+
+</article>
