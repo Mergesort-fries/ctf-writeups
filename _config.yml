@@ -1,17 +1,23 @@
 title: CTF Writeups
-description: Mergesort Fries CTF team writeups and exploits
+description: "Mergesort(fries) CTF team writeups and exploits"
 url: "https://Mergesort-fries.github.io"
 baseurl: "/ctf-writeups"
 
 # Team info
+team_name: "Mergesort(fries)"
 github_org: Mergesort-fries
-# ctftime_url: https://ctftime.org/team/YOURTEAMID
 
-theme: minima
-
-# Turn off minima's defaults — we override everything
-minima:
-  skin: dark
+# Members
+members:
+  - handle: matcha
+    name: Ding Jie
+    github: Notmatcha
+  - handle: itsken
+    name: Kendrix
+    github: KenLZY
+  - handle: jrxx
+    name: Michael Jr Rasco
+    github: michaeljrr
 
 # Plugins
 plugins:
@@ -21,6 +27,7 @@ plugins:
 # Build settings
 markdown: kramdown
 highlighter: rouge
+theme: minima
 
 kramdown:
   input: GFM
@@ -28,13 +35,12 @@ kramdown:
   syntax_highlighter_opts:
     css_class: 'highlight'
 
-# Permalinks
 permalink: /:categories/:year/:month/:day/:title/
 
-# Exclude
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
   - README.md
+  - FRONT_MATTER_GUIDE.md
