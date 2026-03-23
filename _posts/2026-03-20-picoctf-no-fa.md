@@ -72,5 +72,5 @@ Always salt password hashes (use bcrypt, argon2, or scrypt). Always rate-limit O
 ## Flag
 
 ```
-picoCTF{placeholder_no_fa}
+picoCTF{n0_r4t3_n0_4uth_7bd3c284}
 ```

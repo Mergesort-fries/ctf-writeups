@@ -96,5 +96,5 @@ Never choose `d` directly. Always pick `e` first (e.g. 65537), then compute `d =
 ## Flag
 
 ```
-picoCTF{placeholder_small_trouble}
+picoCTF{sm4ll_d_24ad96a6}
 ```

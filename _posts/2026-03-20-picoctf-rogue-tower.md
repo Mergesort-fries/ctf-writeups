@@ -71,5 +71,5 @@ Rogue cell towers (IMSI catchers / Stingrays) capture device identifiers and can
 ## Flag
 
 ```
-picoCTF{placeholder_rogue_tower}
+picoCTF{r0gu3_c3ll_t0w3r_dbc40831}
 ```

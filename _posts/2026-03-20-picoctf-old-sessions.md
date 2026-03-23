@@ -70,5 +70,5 @@ Swap the session cookie with the forged value and reload the page.
 ## Flag
 
 ```
-picoCTF{placeholder_old_sessions}
+picoCTF{s3t_s3ss10n_3xp1rat10n5_53a328ed}
 ```
