@@ -26,6 +26,9 @@ permalink: /team/
       <a href="https://github.com/Notmatcha" class="member-github" target="_blank" rel="noopener">
         <span class="gh-icon">⌥</span> Notmatcha
       </a>
+      <a href="https://www.https://www.linkedin.com/in/ding-jie-ng/" class="member-linkedin" target="_blank" rel="noopener">
+        <span class="li-icon">in</span> Ng Ding Jie
+      </a>
     </div>
   </div>
 
@@ -41,6 +44,9 @@ permalink: /team/
       <a href="https://github.com/KenLZY" class="member-github" target="_blank" rel="noopener">
         <span class="gh-icon">⌥</span> KenLZY
       </a>
+      <a href="https://www.https://www.linkedin.com/in/kendrix-lim/" class="member-linkedin" target="_blank" rel="noopener">
+        <span class="li-icon">in</span> kendrix-lim
+      </a>
     </div>
   </div>
 
@@ -55,6 +61,9 @@ permalink: /team/
       </div>
       <a href="https://github.com/michaeljrr" class="member-github" target="_blank" rel="noopener">
         <span class="gh-icon">⌥</span> michaeljrr
+      </a>
+      <a href="https://www.https://www.linkedin.com/in/michaeljrr/" class="member-linkedin" target="_blank" rel="noopener">
+        <span class="li-icon">in</span> Michael Jr Rasco Emata
       </a>
     </div>
   </div>
@@ -139,4 +148,25 @@ permalink: /team/
 }
 .member-github:hover { color: var(--green); text-decoration: none; }
 .gh-icon { font-size: 0.85rem; }
+.member-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #0A66C2;
+  font-weight: 500;
+}
+
+.li-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #0A66C2;
+  color: white;
+  border-radius: 3px;
+}
 </style>
