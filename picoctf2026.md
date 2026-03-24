@@ -13,7 +13,7 @@ permalink: /picoctf2026/
 </div>
 
 <div class="scoreboard-img">
-  <img src="{{ '/assets/images/picoCTF2026.png' | relative_url }}" alt="picoCTF 2026 scoreboard">
+  <img src="{{ '/assets/images/picoctf2026/picoCTF2026.png' | relative_url }}" alt="picoCTF 2026 scoreboard">
 </div>
 
 <div class="score-banner">
