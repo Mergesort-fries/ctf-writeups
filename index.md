@@ -36,6 +36,21 @@ title: Home
     <div class="cat-name">Pwn</div>
     <div class="cat-desc">Buffer overflows, ROP chains, heap exploitation</div>
   </a>
+  <a href="{{ '/rev' | relative_url }}" class="cat-card" style="--cat-color:var(--accent2)">
+    <div class="cat-icon" style="color:var(--accent2)">[rev]</div>
+    <div class="cat-name">Rev</div>
+    <div class="cat-desc">Binary analysis, disassembly, deobfuscation</div>
+  </a>
+  <a href="{{ '/forensics' | relative_url }}" class="cat-card" style="--cat-color:var(--green)">
+    <div class="cat-icon" style="color:var(--green)">[foren]</div>
+    <div class="cat-name">Forensics</div>
+    <div class="cat-desc">Disk images, memory dumps, network captures, steganography</div>
+  </a>
+  <a href="{{ '/misc' | relative_url }}" class="cat-card" style="--cat-color:var(--accent2)">
+    <div class="cat-icon" style="color:var(--accent2)">[misc]</div>
+    <div class="cat-name">Misc</div>
+    <div class="cat-desc">General skills, encoding, OSINT, and everything else</div>
+  </a>
   <a href="{{ '/picoctf2026' | relative_url }}" class="cat-card" style="--cat-color:var(--green)">
     <div class="cat-icon" style="color:var(--green)">[ctf]</div>
     <div class="cat-name">picoCTF 2026</div>
@@ -48,7 +63,7 @@ title: Home
 <ul class="post-list">
   {% for post in site.posts limit:20 %}
     {% assign cat = post.categories[1] | default: post.categories[0] %}
-    <li class="post-item" style="--cat-color:{% if cat == 'web' %}var(--cyan){% elsif cat == 'crypto' %}var(--accent){% elsif cat == 'pwn' %}var(--red){% else %}var(--green){% endif %}">
+    <li class="post-item" style="--cat-color:{% if cat == 'web' %}var(--cyan){% elsif cat == 'crypto' %}var(--accent){% elsif cat == 'pwn' %}var(--red){% elsif cat == 'forensics' %}var(--green){% elsif cat == 'rev' or cat == 'misc' %}var(--accent2){% else %}var(--green){% endif %}">
       <a href="{{ post.url | relative_url }}">
         <div class="post-accent"></div>
         <div class="post-body">
@@ -58,7 +73,7 @@ title: Home
             {% if post.difficulty %}<span class="post-tag" style="background:rgba(255,255,255,0.06);color:var(--muted)">{{ post.difficulty }}</span>{% endif %}
           </div>
           <div class="post-title">{{ post.title }}</div>
-          {% if post.excerpt %}<div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</div>{% endif %}
+          {% if post.description %}<div class="post-excerpt">{{ post.description | truncate: 100 }}</div>{% elsif post.excerpt %}<div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</div>{% endif %}
         </div>
         <div class="post-arrow">→</div>
       </a>
