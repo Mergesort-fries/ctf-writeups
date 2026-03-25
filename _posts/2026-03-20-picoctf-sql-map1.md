@@ -58,5 +58,5 @@ Never trust user-supplied input in SQL queries. Use parameterised queries / prep
 ## Flag
 
 ```
-picoCTF{placeholder_sql_map1}
+picoCTF{sql_inj3ction_f0r_th3_win_602f928e}
 ```
